@@ -18,7 +18,7 @@
 最後、[プロジェクト環境](https://itss-task-manager.herokuapp.com/)とはアプリのリリースを確認できる場所というものです。
 
 
-##　開発者向けの指導
+## 開発者向けの指導
 
 まずは、Visual studio codeというIDEを開いて、Prettier - Code formatter と　EditorConfig for VS Code というextensionをインストールします。
 それから、default formatをPrettier - Code formatterにしてください。
