@@ -1,10 +1,13 @@
+import { BrowserRouter, Outlet } from 'react-router-dom'
 import './assets/styles/App.css'
+import Routers from './Routers'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to 決勝</h1>
-    </div>
+    <BrowserRouter>
+      <Routers />
+      <Outlet />
+    </BrowserRouter>
   )
 }
 
