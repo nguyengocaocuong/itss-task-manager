@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../assets/styles/Signin.scss'
 import { signIn } from '../services/apiService'
 
 const Signin = props => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   const validateEmail = email => {
     return String(email)
@@ -32,7 +33,8 @@ const Signin = props => {
     let res = await signIn(email, password)
     // console.log('>>>>>check res: ', res);
     if (res.data && res.data.statusCode === 201) {
-      alert('Register succcessfully!')
+      localStorage.setItem('user', JSON.stringify(res.data))
+      navigate('/')
       //nav
     }
 

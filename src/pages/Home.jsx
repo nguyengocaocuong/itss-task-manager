@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 function Home() {
-  const account = localStorage.getItem('user') ? JSON.stringify(localStorage.getItem('user')) : undefined
+  const account = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : undefined
   return account ? (
     <>
       <Header />
