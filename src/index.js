@@ -1,15 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import { RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-// import Routers from './router'
+import Routers from './router'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    {/* <RouterProvider router={Routers} /> */}
-    <h1>Nguyen Ngo Cao Cuong</h1>
+    <RouterProvider router={Routers} />
   </React.StrictMode>
 )
 
