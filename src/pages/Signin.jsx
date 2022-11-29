@@ -71,7 +71,7 @@ const Signin = props => {
           ログイン
         </button>
         <p className="forgot-password">
-          <a href="#">パスワードを忘れた方?</a>
+          <Link to={'/reset-pass'}>パスワードを忘れた方?</Link>
         </p>
         <p className="register">
           アカウントがない方?
