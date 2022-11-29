@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Resetpass.scss'
+import '../assets/styles/Resetpass.scss'
 import { forgotPassword } from '../services/resetpassService'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import { useNavigate } from 'react-router-dom'
