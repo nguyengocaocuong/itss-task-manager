@@ -17,6 +17,7 @@ function VerifyPasswordEmail() {
 
   async function handleBtnResetPassword() {
     let token = searchParams.get('token')
+    setSearchParams(searchParams)
     if (cpassword === password) {
       let res = await resetPassword({
         resetToken: token,
