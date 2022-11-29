@@ -24,7 +24,7 @@ const Routers = createBrowserRouter([
     element: <Resetpass />
   },
   {
-    path: '/veryfy-pass',
+    path: '/verify-pass',
     element: <VerifyPasswordEmail />
   }
 ])

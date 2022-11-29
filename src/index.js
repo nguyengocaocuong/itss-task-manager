@@ -8,9 +8,7 @@ import Routers from './router'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <div>
-      <RouterProvider router={Routers} />
-    </div>
+    <RouterProvider router={Routers} />
   </React.StrictMode>
 )
 

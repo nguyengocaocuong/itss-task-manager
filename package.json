@@ -21,6 +21,7 @@
         "react-toastify": "^5.5.0",
         "router-dom": "^2.2.9",
         "sass": "^1.56.1",
+        "surge": "^0.23.1",
         "web-vitals": "^2.1.4"
     },
     "scripts": {

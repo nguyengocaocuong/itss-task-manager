@@ -15,7 +15,7 @@ function Resetpass() {
     if (email) {
       let res = await forgotPassword({
         email: email,
-        returnUrl: 'http://localhost:3000/reset-password'
+        returnUrl: 'http://itss-task-manager-develop.surge.sh/verify-pass'
       })
       if (res && res.statusCode === 200) {
         toast.success('メールを確認してパスワードをリセットしてください')

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../assets/styles/SignUp.scss'
 import { postRegister } from '../services/apiService'
 
@@ -7,6 +7,7 @@ const Signup = props => {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   const validateEmail = email => {
     return String(email)
@@ -38,7 +39,8 @@ const Signup = props => {
     let res = await postRegister(fullName, email, password)
     console.log('>>>>>check res: ', res)
     if (res.data && res.data.statusCode === 201) {
-      alert('Register succcessfully!')
+      localStorage.setItem('user', JSON.stringify(res.data))
+      navigate('/')
       //nav
     }
 
