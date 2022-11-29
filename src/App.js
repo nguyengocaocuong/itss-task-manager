@@ -1,13 +1,9 @@
-import './assets/styles/App.css'
-import Signup from './pages/Signup'
+import { Navigate } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
-  return (
-    <div className="App">
-      {/* <h1>Welcome to 決勝</h1> */}
-      <Signup />
-    </div>
-  )
+  const account = localStorage.getItem('user') ? JSON.stringify(localStorage.getItem('user')) : undefined
+  return account ? <Home /> : <Navigate to="/sign-in" />
 }
 
 export default App

@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import '../assets/styles/Signup.scss'
+import { Link } from 'react-router-dom'
+import '../assets/styles/Signin.scss'
 import { signIn } from '../services/apiService'
 
 const Signin = props => {
@@ -74,7 +75,7 @@ const Signin = props => {
         </p>
         <p className="register">
           アカウントがない方?
-          <a href="#">サインアップ</a>
+          <Link to={'/sign-up'}>サインアップ</Link>
         </p>
       </div>
     </div>

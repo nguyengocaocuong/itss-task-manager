@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './SignUp.scss'
-import axios from 'axios'
+import { Link } from 'react-router-dom'
+import '../assets/styles/SignUp.scss'
 import { postRegister } from '../services/apiService'
 
 const Signup = props => {
@@ -87,7 +87,7 @@ const Signup = props => {
           Register
         </button>
         <p className="forgot-password">
-          Already registered <a href="#">log in?</a>
+          Already registered <Link to={'/sign-in'}>sign in?</Link>
         </p>
       </div>
     </div>
