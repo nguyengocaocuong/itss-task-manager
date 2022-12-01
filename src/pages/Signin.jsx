@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
 import '../assets/styles/Signin.scss'
 import { signIn } from '../services/apiService'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Signin = props => {
   const [email, setEmail] = useState('')
