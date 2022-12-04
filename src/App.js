@@ -1,11 +1,11 @@
-import './assets/styles/App.css'
+import { Navigate } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to 決勝</h1>
-    </div>
-  )
+  //   document.title = '決勝'
+  //   const account = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : undefined
+  //   return account ? <Home /> : <Navigate to={'/sign-in'} />
+  return <h1> test</h1>
 }
 
 export default App
