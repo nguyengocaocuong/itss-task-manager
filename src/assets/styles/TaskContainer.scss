@@ -1,0 +1,18 @@
+.task-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(231, 232, 210);
+    height: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+
+    .col {
+        border: 0.5px solid gray;
+        text-align: center;
+        h3{
+            border-bottom: 0.5px solid gray;
+            padding:10px;
+            height: 10%;
+        }
+    }
+}

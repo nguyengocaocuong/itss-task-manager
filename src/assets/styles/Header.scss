@@ -1,25 +1,12 @@
 #header {
-    text-align: center;
+   padding:5px 20px;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(231, 232, 210);
+   margin-bottom: 20px;
+   box-shadow: rgba(211, 221, 175, 0.2) 0px 8px 24px;
 
-    ul {
-        padding-left: 40px;
-        display: flex;
-        justify-content: start;
-
-        li {
-            display: inline-block;
-            padding: 20px;
-            font-size: 20px;
-
-            a {
-                color: white;
-                text-decoration: none;
-            }
-            button{
-                color: white;
-            }
-        }
-    }
-
-    background-color: rgb(3, 103, 110);
+   .search{
+    width: 65%;
+   }
 }
